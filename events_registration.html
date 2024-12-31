@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Techno Fun 2K24 Events</title>
+</head>
+<body>
+    <header>
+        <h1>Choose Your Event</h1>
+        <p>Select an event to register for Techno Fun 2K24.</p>
+    </header>
+
+    <div class="events-container">
+        <!-- Event Card: Tech Quiz -->
+        <div class="event-card tech-quiz" onclick="window.location.href='tech_quiz_registration.html'">
+            <h2>Tech Quiz</h2>
+            <p>Challenge your tech knowledge!</p>
+        </div>
+
+        <!-- Event Card: Programming Competition -->
+        <div class="event-card programming" onclick="window.location.href='programming_registration.html'">
+            <h2>Programming Competition</h2>
+            <p>Show off your coding skills!</p>
+        </div>
+
+        <!-- Event Card: Project Ideas -->
+        <div class="event-card project-ideas" onclick="window.location.href='project_ideas_registration.html'">
+            <h2>Project Ideas</h2>
+            <p>Share innovative project ideas!</p>
+        </div>
+
+        <!-- Event Card: PUBG Gaming Tournament -->
+        <div class="event-card pubg" onclick="window.location.href='pubg_registration.html'">
+            <h2>PUBG Gaming Tournament</h2>
+            <p>Compete for victory!</p>
+        </div>
+
+        <!-- Event Card: Project Exhibition -->
+        <div class="event-card project-exhibition" onclick="window.location.href='project_exhibition_registration.html'">
+            <h2>Project Exhibition</h2>
+            <p>Display your best projects!</p>
+        </div>
+
+        <!-- Event Card: Musical Night -->
+        <div class="event-card musical-night" onclick="window.location.href='musical_night_registration.html'">
+            <h2>Musical Night</h2>
+            <p>Join us for a special evening of music!</p>
+        </div>
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #fafafa;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #333;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        .events-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            max-width: 800px;
+            padding: 1rem;
+        }
+
+        .event-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .event-card h2 {
+            margin: 0.5rem 0;
+            color: #333;
+        }
+
+        .event-card p {
+            color: #333;
+            margin: 0.5rem 0 0;
+        }
+
+        /* Specific Colors for Each Event Card */
+        .tech-quiz:hover {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .programming:hover {
+            background-color: #FF5722;
+            color: #fff;
+        }
+
+        .project-ideas:hover {
+            background-color: #3F51B5;
+            color: #fff;
+        }
+
+        .pubg:hover {
+            background-color: #9C27B0;
+            color: #fff;
+        }
+
+        .project-exhibition:hover {
+            background-color: #009688;
+            color: #fff;
+        }
+
+        .musical-night:hover {
+            background-color: #FF9800;
+            color: #fff;
+        }
+
+        /* Adding transform effect */
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</body>
+</html>
